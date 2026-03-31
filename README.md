@@ -2,6 +2,97 @@
 
 This repo is a **safe sandbox** to practice undoing mistakes in a shared GitHub repo using **GitHub Desktop**.
 
+
+
+---
+
+## 🧑‍💻 Using VS Code (Git Commands Version)
+
+If you prefer using **VS Code + Git (CLI)** instead of GitHub Desktop, here are the equivalent commands for each workflow.
+
+> You can run these in:
+> - VS Code Terminal (`Ctrl + ~`)
+> - Git Bash
+> - Mac/Linux Terminal
+
+---
+
+## 🔁 Core Workflow (CLI version)
+
+```bash
+git pull origin main
+git checkout -b yourname/task
+git add .
+git commit -m "Your message here"
+git push origin yourname/task
+```
+
+---
+
+## 🧪 Part 1 — Discard Uncommitted Changes
+
+```bash
+git restore files/story.md
+```
+
+---
+
+## 🧪 Part 2 — Undo a Local Commit (NOT pushed)
+
+```bash
+git reset --soft HEAD~1
+```
+
+To completely discard changes:
+
+```bash
+git reset --hard HEAD~1
+```
+
+⚠️ This permanently deletes changes.
+
+---
+
+## 🧪 Part 3 — Revert a Merged (Pushed) Commit
+
+```bash
+git revert HEAD
+```
+
+---
+
+## 🧪 Part 4 — Handling Merge Conflicts
+
+```bash
+git pull origin main
+```
+
+Resolve conflict markers in file, then:
+
+```bash
+git add files/story.md
+git commit
+```
+
+---
+
+## 🧪 Part 5 — Switch to Backup Branch
+
+```bash
+git checkout backup-before-fixing
+git checkout yourname/task
+```
+
+---
+
+## 🧠 Key Concepts (CLI mindset)
+
+| Situation                | Command       | Safe for Teams?      |
+| ------------------------ | ------------- | -------------------- |
+| Undo uncommitted changes | `git restore` | ✅ Yes                |
+| Undo local commit        | `git reset`   | ⚠️ Only if not pushed |
+| Undo shared commit       | `git revert`  | ✅ Yes                |
+
 ## Core rule for this lab
 **Always work on a branch.**  
 Do not commit directly to `main`.
