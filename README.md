@@ -1,8 +1,12 @@
 # Git Recovery Practice
 
-This repo is a **safe sandbox** to practice undoing mistakes in a shared GitHub repo using **GitHub Desktop**.
+This repo is a **safe sandbox** to practice undoing mistakes in a shared GitHub repo using **GitHub Desktop** or **Git (command line)**.
 
+## Setup for Github Desktop
 
+Clone your **team's** practice repo from Github:
+
+File -> Clone Repository
 
 ---
 
@@ -16,6 +20,13 @@ If you prefer using **VS Code + Git (CLI)** instead of GitHub Desktop, here are 
 > - Mac/Linux Terminal
 
 ---
+
+## Setup for VS Code
+
+Clone your **team's** practice repo from Github:
+
+git clone <your-team-repo-url>
+cd git-recovery-practice-team-X
 
 ## 🔁 Core Workflow (CLI version)
 
