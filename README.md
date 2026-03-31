@@ -30,7 +30,6 @@ Do not commit directly to `main`.
 ## Files to know
 - `files/story.md` – conflict-friendly text file (you will edit the same lines as teammates)
 - `files/numbers.csv` – small CSV for “bad change → revert” practice
-- `scripts/check_answers.py` – optional checker for the final conflict resolution
 
 ---
 
@@ -122,20 +121,3 @@ If anything feels broken:
 2. Verify files look sane
 3. Switch back to your working branch or pull `main`
 4. Continue
-
----
-
-## Submission (easy)
-Submit:
-1. A screenshot of **History** showing an **Undo**
-2. A screenshot of **History** showing a **Revert** (or revert PR)
-3. The final conflict-resolved line from `files/story.md`
-
----
-
-## Optional checker
-After Part 4, run:
-```bash
-python scripts/check_answers.py
-```
-It prints PASS/FAIL based on the expected final conflict line.
