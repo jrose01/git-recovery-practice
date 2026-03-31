@@ -1,4 +1,4 @@
-# Git Recovery Practice (Branch-First Teams)
+# Git Recovery Practice
 
 This repo is a **safe sandbox** to practice undoing mistakes in a shared GitHub repo using **GitHub Desktop**.
 
